@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meklit Shiferaw</title>
+    <link rel="stylesheet" href="css/background.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <div><span>Meklit Shiferaw</span></div>
-                <div><img src="images/ham_menu_icon.jpg" alt="humberger menu"></div>
-                <ul>
+            <div class="nav">
+                <div class="logo"><span>Meklit Shiferaw</span></div>
+                <div><img src="images/menu-icon.png" alt="humberger menu" class="hamburger" onclick="toggleMenu()"></div>
+                <ul class="nav-menu hidden" id="navMenu">
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -22,73 +23,115 @@
     </header>
     <main>
         <h2>Education</h2>
-        <section>
-            <div>
-                <div>2011-2014</div>
-                <h2>St.D.Comboni Secondary School-Hawassa</h2>
-                <p>
-                   I completed my highschool in St.D.comboni school-Hawassa. 
-                   It was transformative journey filled with academic challenges and meaningful friendships that molded my identity. 
-                   From late-night study sessions to memorable experiences at school events, I embraced every opportunity for development and self-discovery.
-                </p>
+        <section class="education">
+            <div class="edu-item">
+                <div class="flex-item item1">
+                    <div class="edu-time">2011-2014</div>
+                    <h3>St.D.Comboni Secondary School-Hawassa</h3>
+                    <p>
+                    I completed my highschool in St.D.comboni school-Hawassa. 
+                    It was transformative journey filled with academic challenges and meaningful friendships that molded my identity. 
+                    From late-night study sessions to memorable experiences at school events, I embraced every opportunity for development and self-discovery.
+                    </p>
+                </div>
+                <img src="images/highschool.jpeg" alt="highschool image" class="flex-item item2">
             </div>
-            <div>
-                <figure>
-                    <img src="images/highschool.jpeg" alt="highschool image">
-                </figure>
-            </div>
-        </section>
-        <section>
-            <div>
-                <div>2015-present</div>
-                <h2>Addis Ababa University</h2>
-                <p>I am currently studying software engineering and computing technology program in AAU.My University education has been an important chapter in my journey to become coder.</p>
-                <p>individual projects help me to apply my theoretical knowledge that i learned in classes, while group assignments teach me to not only depend on my coding skill but also be better at teamwork and communication.</p>
-                <p>I am excited to continue my journey in this rapidly developing field  and work towards my goal of becoming a skilled software engineer.</p>
-                <figure>
-                    <img src="images/AAU.jpg" alt="AAU image">
-                </figure>
+            <div class="edu-item">
+                <div class="flex-item item1">
+                    <div class="edu-time">2015-present</div>
+                    <h3>Addis Ababa University</h3>
+                    <p>
+                        I am currently studying software engineering and computing technology program in AAU.My University education has been an important chapter in my journey to become coder.
+                        individual projects help me to apply my theoretical knowledge that i learned in classes, while group assignments teach me to not only depend on my coding skill but also be better at teamwork and communication.
+                        I am excited to continue my journey in this rapidly developing field  and work towards my goal of becoming a skilled software engineer.
+                    </p>
+                </div>
+                <img src="images/AAU.jpg" alt="AAU image" class="flex-item item2">
             </div>
         </section>
         <section>
             <div>
-                <h2>My Skils</h2>
+                <h2>My Skills</h2>
                 <table>
                     <tr>
-                        <td>HTML</td>
-                        <td><input type="range" class="slide" disabled value="88"> <p>88%</p></td>
+                        <div class="ts">
+                            <td>
+                                <p>HTML</p>
+                            </td>
+                        </div>
+                        <div class="progress">
+                            <td><input type="range" class="slide" disabled value="88"></td>
+                            <td><span>88%</span></td>
+                        </div>
                     </tr>
                     <tr>
-                        <td>CSS</td>
-                        <td><input type="range" class="slide" disabled value="82"> <p>82%</p></td>
+                        <div class="ts">
+                            <td>
+                                <p>CSS</p>
+                            </td>
+                        </div>
+                        <div class="progress">
+                            <td><input type="range" class="slide" disabled value="82"></td>
+                            <td><span>82%</span></td>
+                        </div>
                     </tr>
                     <tr>
-                        <td>Javascript</td>
-                        <td><input type="range" class="slide" disabled value="60"> <p>60%</p></td>
+                        <div class="ts">
+                            <td>
+                                <p>Javascript</p>
+                            </td>
+                        </div>
+                        <div class="progress">
+                            <td><input type="range" class="slide" disabled value="60"></td>
+                            <td><span>60%</span></td>
+                        </div>
                     </tr>
                     <tr>
-                        <td>Phyton</td>
-                        <td><input type="range" class="slide" disabled value="75"> <p>75%</p></td>
+                        <div class="ts">
+                            <td>
+                                <p>Phyton</p>
+                            </td>
+                        </div>
+                        <div class="progress">
+                            <td><input type="range" class="slide" disabled value="75"></td>
+                            <td><span>75%</span></td>
+                        </div>
                     </tr>
                     <tr>
-                        <td>Java</td>
-                        <td><input type="range" class="slide" disabled value="75"> <p>75%</p></td>
+                        <div class="ts">
+                            <td>
+                                <p>Java</p>
+                            </td>
+                        </div>
+                        <div class="progress">
+                            <td><input type="range" class="slide" disabled value="75"></td>
+                            <td><span>75%</span></td>
+                        </div>
                     </tr>
                     <tr>
-                        <td>MySQL</td>
-                        <td><input type="range" class="slide" disabled value="85"> <p>85%</p></td>
+                        <div class="ts">
+                            <td>
+                                <p>MySQL</p>
+                            </td>
+                        </div>
+                        <div class="progress">
+                            <td><input type="range" class="slide" disabled value="85"></td>
+                            <td><span>85%</span></td>
+                        </div>
                     </tr>
                 </table>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <h2><span>social</span></h2>
+        <div class="social">
+            <p>social</p>
             <a target="_blank" href="https://github.com/Meklitshiferaw"><img src="images/github_logo.png" alt="github icon"></a>
-            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram_logo.webp" alt="instagram icon"></a>
+            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram-logo.png" alt="instagram icon" id="insta-logo"></a>
             <a target="_blank" href="https://x.com/CodingNinjasOff"><img src="images/twitter-logo.webp" alt="twiter icon"></a>
         </div>
-        <div><p>&copy; 2024 Meklit Shiferaw. All rights reserved.</p></div>
+        <div class="copyright">&copy; 2024 Meklit Shiferaw. All rights reserved.</div>
     </footer>
+    <script src="js/Menu.js"></script>
 </body>
+</html>

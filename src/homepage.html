@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meklit Shiferaw</title>
-</head>
-<body>
-
-<header>
-    <nav>
-        <div>
-            <div><span>Meklit Shiferaw</span></div>
-            <div><img src="images/ham_menu_icon.jpg" alt="humberger menu"></div>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="background.html">background</a></li>
-            </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/homepage.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav">
+          <div class="logo"><span>Meklit Shiferaw</span></div>
+          <div>
+            <img
+              src="images/menu-icon.png"
+              alt="humberger menu"
+              class="hamburger"
+              onclick="toggleMenu()"
+            />
+          </div>
+          <ul class="nav-menu hidden" id="navMenu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="background.html">background</a></li>
+          </ul>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
-    <div>
-        <p>Hey</p>
-        <p>i'm Meklit Shiferaw</p>
+    <main>
+      <div class="hero">
+        <h1>Hey i'm <br />Meklit Shiferaw</h1>
         <p>i'm software engineering student in Addis Abeba University.</p>
-        <a href="projects.html">projects</a>
-    </div>
-    <div>
-        <img src="images/coding_girl.png" alt="avater img">
-    </div>
-</main>
+        <button class="btn-projects">
+          <a href="projects.html">projects</a>
+        </button>
+      </div>
+      <div>
+        <img src="images/coding_girl.png" alt="avater img" />
+      </div>
+    </main>
 
-<footer>
-    <div>
-        <h2><span>social</span></h2>
-        <a target="_blank" href="https://github.com/Meklitshiferaw"><img src="images/github_logo.png" alt="github icon"></a>
-        <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram_logo.webp" alt="instagram icon"></a>
-        <a target="_blank" href="https://x.com/CodingNinjasOff"><img src="images/twitter-logo.webp" alt="twiter icon"></a>
-    </div>
-    <div>&copy; 2024 Meklit Shiferaw. All rights reserved.</div>
-    
-</footer>
-</body>
+    <footer>
+      <div class="social">
+        <p>social</p>
+        <a target="_blank" href="https://github.com/Meklitshiferaw"
+          ><img src="images/github_logo.png" alt="github icon"
+        /></a>
+        <a
+          target="_blank"
+          href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="
+          ><img
+            src="images/instagram-logo.png"
+            alt="instagram icon"
+            id="insta-logo"
+        /></a>
+        <a target="_blank" href="https://x.com/CodingNinjasOff"
+          ><img src="images/twitter-logo.webp" alt="twiter icon"
+        /></a>
+      </div>
+      <div class="copyright">
+        &copy; 2024 Meklit Shiferaw. All rights reserved.
+      </div>
+    </footer>
+    <script src="js/Menu.js"></script>
+  </body>
 </html>

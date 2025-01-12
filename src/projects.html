@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meklit Shiferaw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <div><span>Meklit Shiferaw</span></div>
-                <div><img src="images/ham_menu_icon.jpg" alt="humberger menu"></div>
-                <ul>
+            <div class="nav">
+                <div class="logo"><span>Meklit Shiferaw</span></div>
+                <div><img src="images/menu-icon.png" alt="humberger menu" class="hamburger" onclick="toggleMenu()"></div>
+                <ul class="nav-menu hidden" id="navMenu">
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -22,39 +26,37 @@
     </header>
     <main>
         <h2>projects</h2>
-        <div>
-            <div><img src="images/product-website.jpg" alt="product website image"></div>
-            <div>
-                <h4>Online Store-HTML+CSS</h4>
+        <div class="projects">
+            <div class="prj">
+                <img src="images/product-website.jpg" alt="product website image">
+                <h3>Online Store-HTML+CSS</h3>
                 <p> A simple website that display poducts along with their price.</p>
-                <a href="https://github.com/Meklitshiferaw/Assessment1_Meklit_Shiferaw_Section_2">view my code</a>
+                <div class="btn"><a target="_blank" href="https://github.com/Meklitshiferaw/Assessment1_Meklit_Shiferaw_Section_2">view my code</a></div>
             </div>
-        </div>
-        <div>
-            <div><img src="images/studentgradebook.jpg" alt="studentgradebook image"></div>
-            <div>
-                <h4>Student Gradebook-java</h4>
+            <div class="prj">
+                <img src="images/studentgradebook.jpg" alt="studentgradebook image">
+                <h3>Student Gradebook-java</h3>
                 <p>A Student Gradebook app, written in java that add new students, grades and help to find student grade.It is helpful for teachers to manage their work.</p>
-                <a href="https://github.com/Meklitshiferaw/Student-Grade-Book">view my code</a>
+                <div class="btn"><a target="_blank" href="https://github.com/Meklitshiferaw/Student-Grade-Book">view my code</a></div>
             </div>
-        </div>
-        <div>
-            <div><img src="images/ToDolist.jpg" alt="todo-list image"></div>
-            <div>
-                <h4>To Do List-java</h4>
+            <div class="prj" id="todo">
+                <img src="images/ToDolist.jpg" alt="todo-list image">
+                <h3>To Do List-java</h3>
                 <p>A simple ToDo List in Java without the Graphical user interface.</p>
-                <a href="https://github.com/Meklitshiferaw/Assignment-1">view my code</a>
+                <div class="btn"><a target="_blank" href="https://github.com/Meklitshiferaw/Assignment-1">view my code</a></div>
             </div>
         </div>
-        <div><a target="_blank" href="files/resume.pdf">Resume</a></div>
+        <div class="btn" id="resume"><a target="_blank" href="files/resume.pdf">Resume</a></div>
     </main>
     <footer>
-        <div>
-            <h2><span>social</span></h2>
+        <div class="social">
+            <p>social</p>
             <a target="_blank" href="https://github.com/Meklitshiferaw"><img src="images/github_logo.png" alt="github icon"></a>
-            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram_logo.webp" alt="instagram icon"></a>
+            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram-logo.png" alt="instagram icon" id="insta-logo"></a>
             <a target="_blank" href="https://x.com/CodingNinjasOff"><img src="images/twitter-logo.webp" alt="twiter icon"></a>
         </div>
-        <div><p>&copy; 2024 Meklit Shiferaw. All rights reserved.</p></div>
+        <div class="copyright">&copy; 2024 Meklit Shiferaw. All rights reserved.</div>
     </footer>
+    <script src="js/Menu.js"></script>
 </body>
+</html>

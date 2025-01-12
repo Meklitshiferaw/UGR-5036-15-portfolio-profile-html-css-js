@@ -1,0 +1,250 @@
+/* Reset some default styles */
+* {
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  body {
+    line-height: 1;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #E5E7EB;
+    color: black;
+    height: 71px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    color: #7843E9;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    padding-top: 20px;
+  }
+  
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 250px;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 412px;
+    background-color: #f4f4f5;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: none; /* Initially hidden */
+  }
+  
+  .nav-menu li {
+    padding: 15px 20px;
+    text-align: left;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+  .nav-menu li a:hover{
+    color: #7843E9;
+  }
+  
+  /* Visible menu */
+  .nav-menu.active {
+    display: block;
+  }
+/* Main Content Styles */
+main {
+    padding: 71px 36px;
+    text-align: center;
+}
+
+.hero {
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 0.5%;
+}
+
+.btn-projects {
+    width: 140px;
+    height: 48px;
+    background-color: #564BB3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 37px;
+    cursor: pointer;
+    font-weight:50;
+    line-height: 27.5%;
+    letter-spacing: 50%;
+    transition: background-color 0.3s;
+}
+
+.btn-projects a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* Ensure link is white */
+}
+
+.btn-projects:hover {
+    background-color: #7843E9; /* Change button color on hover */
+}
+
+/* Image Styles */
+img {
+    width: 340px;
+    height: auto; /* Responsive image */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social p {
+    font-weight: bold;
+}
+
+.social a {
+    margin-right: 10px; /* Space between social icons */
+}
+.social img {
+    width: 22px; /* Adjust size of social icons */
+}
+#insta-logo{
+    width: 30px;
+}
+.copyright{
+    padding-top: 30px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+@media (min-width: 800px) and (max-width: 1279px){
+  h1{
+    font-size: 48px;
+  }
+  main p{
+    font-size: 16px;
+  }
+  main img{
+    width: 400px;
+    margin-left: 100px;
+  }
+  .hamburger{
+    margin-left: 620px;
+  }
+  main{
+    display: flex;
+  }
+  .hero{
+    margin-top: 90px;
+  }
+}
+@media (min-width: 1280px){
+  h1{
+    font-size: 64px;
+  }
+  main p{
+    font-size: 18px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  header{
+    height: 102px;
+    padding-left: 180px;
+  }
+  main{
+    display: flex;
+  }
+  .hero{
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+  main img{
+    width: 615px;
+    margin-left: 100px;
+  }
+  .hamburger {
+    display: none; /* Hide hamburger menu on tablet/desktop */
+  }
+
+  .nav-menu {
+    display: flex; /* Always visible on tablet/desktop */
+    width: 700px;
+    flex-direction: row; /* Align menu items horizontally */
+    position: static;
+    box-shadow: none;
+    background-color: #E5E7EB;
+    margin-left: 400px;
+  }
+  .nav-menu ul {
+      list-style-type: none;
+      display: flex;
+  }
+  
+  .nav-menu li {
+      margin-left: 20px; /* Space between navigation items */
+      padding: 0 15px;
+      height: 48px;
+      background-color: #7843E9;
+      border-radius: 10px;
+      padding-top: 18px;
+  }
+  .nav-menu li:hover{
+      background-color: #564BB3;
+  }
+  
+  .nav-menu li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+      margin: 27px;
+  }
+  .nav-menu li a:hover{
+    color: #ffffff;
+  }
+}

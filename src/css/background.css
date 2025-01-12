@@ -1,0 +1,317 @@
+* {
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  body {
+    line-height: 1;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #E5E7EB;
+    color: black;
+    height: 71px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    color: #7843E9;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    padding-top: 20px;
+  }
+  
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 250px;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 412px;
+    background-color: #f4f4f5;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: none; /* Initially hidden */
+  }
+  
+  .nav-menu li {
+    padding: 15px 20px;
+    text-align: left;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+  .nav-menu li a:hover{
+    color: #7843E9;
+  }
+  
+  /* Visible menu */
+  .nav-menu.active {
+    display: block;
+  }
+    
+    /* Main Content */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .edu-item {
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+    
+    .edu-time {
+      color: #7843E9;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .edu-item h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .edu-item p {
+      margin: 0.5rem 0 1rem;
+    }
+    
+    .edu-item img {
+      width: 300px;
+      border-radius: 8px;
+      margin-top: 1rem;
+      margin-left: 60px;
+    }
+    
+    /* Skills Section */
+    
+    td {
+      padding: 10px;
+      vertical-align: middle;
+    }
+    
+    .ts p {
+      font-size: 1em;
+      margin: 0;
+      color: #333;
+    }
+    
+    .ts span {
+      font-size: 0.9em;
+      color: #6a0dad;
+      font-weight: bold;
+      display: inline-block;
+      margin-left: 10px;
+      text-align: right;
+    }
+    
+    table {
+      width: 340px;
+      background-color: #E5E7EB;
+      margin-left: 70px;
+    }
+    
+    .slide {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 15px;
+      border-radius: 5px;  
+      background: #7843E9;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    
+    .slide::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default browser styles */
+      appearance: none;
+      width: 20px; /* Width of the thumb */
+      height: 20px; /* Height of the thumb */
+      border-radius: 50%; /* Round thumb */
+      background: #7843E9; /* Color of the thumb */
+      cursor: pointer; /* Pointer cursor on hover */
+  }
+    .slide::-webkit-slider-runnable-track {
+      background: #ffffff; /* Background color of the track */
+  }
+    
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+  }
+  
+  .social p {
+      font-weight: bold;
+  }
+  
+  .social a {
+      margin-right: 10px; /* Space between social icons */
+  }
+  .social img {
+      width: 22px; /* Adjust size of social icons */
+  }
+  #insta-logo{
+    width: 30px;
+  }
+  .copyright{
+      padding-top: 30px;
+      font-weight: lighter;
+      font-size: 12px;
+  }
+  @media (min-width: 800px) and (max-width: 1279px){
+    h1{
+      font-size: 48px;
+    }
+    main p{
+      font-size: 16px;
+    }
+    .hamburger{
+      margin-left: 620px;
+    }
+    .item1 {
+      order: 2; /* Will appear last */
+      margin-left: 15px;
+    }
+    
+    .item2 {
+      order: 1; /* Will appear second */
+    }
+    .edu-time{
+      text-align: center;
+    }
+    .edu-item h3{
+      text-align: center;
+    }
+    .edu-item img{
+      width: 460px;
+      height: 226px;
+      margin-left: 200px;
+    }
+    table {
+      width: 700px;
+      margin-left: 70px;
+    }
+  }
+  @media (min-width: 1280px){
+    h1{
+      font-size: 64px;
+    }
+    main p{
+      font-size: 18px;
+    }
+    table {
+      width: 796px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    .edu-item{
+      display: flex;
+    }
+    .edu-item img{
+      width: 460px;
+      height: 226px;
+    }
+    .item1 {
+      order: 2; /* Will appear last */
+      margin-left: 15px;
+    }
+    
+    .item2 {
+      order: 1; /* Will appear second */
+    }
+    .edu-time{
+      text-align: left;
+    }
+    .edu-item h3{
+      text-align: left;
+    }
+    header{
+      height: 102px;
+      padding-left: 180px;
+    }
+    .hamburger {
+      display: none; /* Hide hamburger menu on tablet/desktop */
+    }
+  
+    .nav-menu {
+      display: flex; /* Always visible on tablet/desktop */
+      width: 700px;
+      flex-direction: row; /* Align menu items horizontally */
+      position: static;
+      box-shadow: none;
+      background-color: #E5E7EB;
+      margin-left: 400px;
+    }
+    .nav-menu ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin-left: 20px; /* Space between navigation items */
+        padding: 0 15px;
+        height: 48px;
+        background-color: #7843E9;
+        border-radius: 10px;
+        padding-top: 18px;
+    }
+    .nav-menu li:hover{
+        background-color: #564BB3;
+    }
+    
+    .nav-menu li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+        margin: 27px;
+    }
+    .nav-menu li a:hover{
+      color: #ffffff;
+    }
+  }

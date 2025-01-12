@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meklit Shiferaw</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <div><span>Meklit Shiferaw</span></div>
-                <div><img src="images/ham_menu_icon.jpg" alt="humberger menu"></div>
-                <ul>
+            <div class="nav">
+                <div class="logo"><span>Meklit Shiferaw</span></div>
+                <div><img src="images/menu-icon.png" alt="humberger menu" class="hamburger" onclick="toggleMenu()"></div>
+                <ul class="nav-menu hidden" id="navMenu">
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -27,7 +28,7 @@
                 <p>If you want to know more about me, feel free to contact me by submitting the form below.</p>
             </div>
             <div>
-                <form>
+                <form class="contact-form" id="contactForm">
                     <div>
                         <label for="name">Name</label>
                         <input type="text" id="name" required placeholder="Enter your name">
@@ -36,18 +37,22 @@
                         <label for="email">Email</label>
                         <input type="text" id="email" required placeholder="Enter your email">
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submitBtn">Submit</button>
                 </form>
             </div>
         </section>
+        <p id="successMessage" style="display: none; color: green; text-align: center; font-size: 1.1em;"></p>
     </main>
     <footer>
-        <div>
-            <h2><span>social</span></h2>
+        <div class="social">
+            <p>social</p>
             <a target="_blank" href="https://github.com/Meklitshiferaw"><img src="images/github_logo.png" alt="github icon"></a>
-            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram_logo.webp" alt="instagram icon"></a>
+            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram-logo.png" alt="instagram icon" id="insta-logo"></a>
             <a target="_blank" href="https://x.com/CodingNinjasOff"><img src="images/twitter-logo.webp" alt="twiter icon"></a>
         </div>
-        <div><p>&copy; 2024 Meklit Shiferaw. All rights reserved.</p></div>
+        <div class="copyright">&copy; 2024 Meklit Shiferaw. All rights reserved.</div>
     </footer>
+    <script src="js/Menu.js"></script>
+    <script src="js/contact.js"></script>
 </body>
+</html>

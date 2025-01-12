@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meklit Shiferaw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <div><span>Meklit Shiferaw</span></div>
-                <div><img src="images/ham_menu_icon.jpg" alt="humberger menu"></div>
-                <ul>
+            <div class="nav">
+                <div class="logo"><span>Meklit Shiferaw</span></div>
+                <div><img src="images/menu-icon.png" alt="humberger menu" class="hamburger" onclick="toggleMenu()"></div>
+                <ul class="nav-menu hidden" id="navMenu">
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -21,59 +25,67 @@
         </nav>
     </header>
     <main>
-        <h1>about</h1>
-        <p>hey I'm Meklit Shiferaw. A student of software engineering and computing technology program at Addis Abeba university. </p>
-        <section>
+        <section class="about">
+            <h1>about</h1>
+            <p>hey I'm Meklit Shiferaw. A student of software engineering and computing technology program at Addis Ababa university. </p>
+        </section>
+        <section class="Hobbies">
             <div>
                 <h2>Hobbies</h2>
                 <p>In my free time, I love to:</p>
                 <p>
-                    Read fictional books and technology books.
-                    I also like to watch movies and dramas since they're a great way to relax.
-                    I love Cooking (and eating).
-                    Looking up at the night sky, with its vastness and sparkling stars, is a captivating experience that evokes awe.
-                    i also love spending time with friends and walking through peaceful streets.
+                    <ul>
+                        <li>Read fictional books and technology books.</li>
+                        <li>I also like to watch movies and dramas since they're a great way to relax.</li>
+                        <li>I love Cooking (and eating).</li>
+                        <li>Looking up at the night sky, with its vastness and sparkling stars, is a captivating experience that evokes awe.</li>
+                        <li>i also love spending time with friends and walking through peaceful streets.</li>
+                    </ul>
                 </p>
             </div>
-            <div>
-                <img src="images/books.jpg" alt="books image">
-                <img src="images/netflix.jpg" alt="pc showing netflix image">
-                <img src="images/food.jpg" alt="food image">
+            <div class="Hobbie-images">
+                <img src="images/books.jpg" alt="books">
+                <img src="images/netflix.jpg" alt="netflix">
+                <img src="images/pc.jpg" alt="coding pc">
                 <img src="images/nightsky.jpg" alt="night sky image">
-                <img src="images/pc.jpg" alt="pc image">
+                <img src="images/food.jpg" alt="food image">
                 <img src="images/street_road.jpg" alt="street road image">
             </div>
         </section>
 
-        <section>
+        <section class="Interests">
             <div>
                 <h2>Interests</h2>
                 <p>I have a passion for coding and astronomy. I find joy in creating websites and exploring the mysteries of the universe</p>
             </div>
-            <div>
+            <div class="Interest-images">
                 <img src="images/telescope.jpg" alt="telescope image">
                 <img src="images/coding_pc.jpg" alt="coding pc image">
             </div>
         </section>
         
-        <section>
+        <section class="Adventures">
             <div>
                 <h2>Adventures</h2>
                 <p>For me, Exploring the night sky and gazing upon the twinkling stars and celestial wonders above is a breathtaking adventure.</p>
             </div>
-            <div>
-                <video src="video/night_sky_video.mp4" controls>Your borwser cannot play the video.</video>
+            <div class="Adventure-video">
+                <video controls>
+                    <source src="video/night_sky_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <h2><span>social</span></h2>
+        <div class="social">
+            <p>social</p>
             <a target="_blank" href="https://github.com/Meklitshiferaw"><img src="images/github_logo.png" alt="github icon"></a>
-            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram_logo.webp" alt="instagram icon"></a>
+            <a target="_blank" href="https://https://www.instagram.com/coders.learning?igsh=b2FxcjdwdDRvYzg="><img src="images/instagram-logo.png" alt="instagram icon"  id="insta-logo"></a>
             <a target="_blank" href="https://x.com/CodingNinjasOff"><img src="images/twitter-logo.webp" alt="twiter icon"></a>
         </div>
-        <div><p>&copy; 2024 Meklit Shiferaw. All rights reserved.</p></div>
+        <div class="copyright">&copy; 2024 Meklit Shiferaw. All rights reserved.</div>
     </footer>
+    <script src="js/Menu.js"></script>
 </body>
 </html>
